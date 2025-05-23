@@ -117,11 +117,7 @@ public class AgenciaEspacial {
                 NaveExploracion nueva_nave_exploracion = new NaveExploracion(nombre, capacidad, anoLanzamiento, tipoElegido);
                 
                 if(existeNave(flota, nombre, anoLanzamiento)){
-                    System.out.println("La nave ya existe, desea agregarla igualmente [si / no]:");
-                    decision = scanner.nextLine();
-                    if (decision.equals("no")){
-                        break;
-                    }
+                    System.out.println("Ya existe una nave similar, se agrega duplicado:");
                 }
                 flota.add(nueva_nave_exploracion);              
                 break;
@@ -139,11 +135,7 @@ public class AgenciaEspacial {
                 NaveCarguero nueva_nave_carguero = new NaveCarguero(nombre, capacidad, anoLanzamiento, capacidadCarga);
                 
                 if(existeNave(flota, nombre, anoLanzamiento)){
-                    System.out.println("La nave ya existe, desea agregarla igualmente [si / no]:");
-                    decision = scanner.nextLine();
-                    if (decision.equals("no")){
-                        break;
-                    }
+                    System.out.println("Ya existe una nave similar, se agrega duplicado:");
                 }
                 flota.add(nueva_nave_carguero);              
                 break;
@@ -161,11 +153,7 @@ public class AgenciaEspacial {
                 NaveCrucero nueva_nave_crucero = new NaveCrucero(nombre, capacidad, anoLanzamiento, capacidadPasajeros);
                 
                 if(existeNave(flota, nombre, anoLanzamiento)){
-                    System.out.println("La nave ya existe, desea agregarla igualmente [si / no]:");
-                    decision = scanner.nextLine();
-                    if (decision.equals("no")){
-                        break;
-                    }
+                    System.out.println("Ya existe una nave similar, se agrega duplicado:");
                 }
                 flota.add(nueva_nave_crucero);    
                 break;
